@@ -1,0 +1,151 @@
+* {}
+
+body, td, th {}
+
+h1, h2, h3, h4, h5, h6 {}
+
+a:link, a:visited {}
+a:hover {}
+a:active {}
+
+.clear {
+    clear:both;
+    float:none;
+}
+.shadow {
+    box-shadow: 0 0 4em 0 rgba(0,0,0,.25);
+}
+.futura {
+    font-family:"Futura STD", Helvetica, sans-serif;
+    letter-spacing:.125em;
+    text-transform:uppercase;
+}
+
+
+/* featured verse styles */
+
+.feat-verse {
+    margin:0 auto;
+}
+.feat-verse .verse-image {
+    display:block;
+}
+.feat-verse .verse-image img {
+    border-radius:1em;
+    width:100%;
+}
+.feat-verse .date {
+    color:#999;
+    display:block;
+}
+.feat-verse .reference {
+    display:block;
+    font-size:12px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.feat-verse .translation {
+    font-size:12px;
+}
+
+/* sign up section */
+
+.sign-up {
+    background-color:#343a40;
+}
+
+/* previous verses */
+
+.month {
+    color:#999;
+    font-size:18px;
+    font-weight:400;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.month:before, .month:after {
+    border-top:1px solid rgba(0,0,0,.1);
+    content:'';
+    display:inline-block;
+    position:relative;
+    top:-.35em;
+    width:44%;
+}
+.month:before {
+    right:1.5%;
+}
+.month:after {
+    left:1.5%;
+}
+#feat-verse {
+    border-radius:1em!important;
+}
+.prev-verses .verse {
+    border-radius:.5em;
+    display:inline-block;
+    position:relative;
+    overflow:hidden;
+    width:20%;
+}
+.prev-verses .verse .overlay {
+    background-color:rgba(0,0,0,.6);
+    display:block;
+    height:100%;
+    opacity:1;
+    position:absolute;
+    top:0;
+    transition:opacity 125ms linear;
+    width:100%;
+}
+.prev-verses .verse:hover .overlay {
+    opacity:0;
+}
+.prev-verses .verse .overlay .date {
+    color:#fff;
+    font-size:2em;
+    font-weight:300;
+    line-height:1;
+    position:relative;
+    text-align:center;
+    top:50%;
+    transform:translateY(-50%);
+}
+.prev-verses .verse .overlay .date span {
+    display:block;
+    font-size:1.75em;
+    font-weight:bold;
+    line-height:1;
+}
+
+/* lightbox styles */
+
+.lightbox {
+    background-color:rgba(255,255,255,.95);
+    display:none;
+    height:100%;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:9999;
+}
+.lightbox .modal {
+    display:block;
+    position:relative;
+    margin:0 auto;
+    transform:translateY(-50%);
+    top:50%;
+    width:50%;
+}
+.lightbox .modal .verse-image {
+    float:left;
+}
+.lightbox .modal .date {
+    color:#999;
+}
+.lightbox .modal .verse {
+}
+.lightbox .modal .reference {
+    font-size:12px;
+    text-transform:uppercase;
+    font-weight:bold;
+}
